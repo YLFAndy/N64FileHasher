@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qV/Kd3ufbNBKQ7dxBZqn7eXR6qrAzRNZ6OIIEK8GM9JHQNDJElKvkSSzMKd9OIh9Yz1ZzegBQIN8ixN2L0ghIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andyd\\source\\repos\\N64Hasher\\N64Hasher\\N64Hasher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andyd\\.nuget\\packages\\crc32.net\\1.2.0\\crc32.net.1.2.0.nupkg.sha512",
+    "C:\\Users\\andyd\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\andyd\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
