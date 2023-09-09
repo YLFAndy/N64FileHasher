@@ -34,6 +34,7 @@
             textBox2 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            lbFileName = new Label();
             SuspendLayout();
             // 
             // button1
@@ -78,6 +79,14 @@
             label2.TabIndex = 4;
             label2.Text = "Hash";
             // 
+            // lbFileName
+            // 
+            lbFileName.AutoSize = true;
+            lbFileName.Location = new Point(16, 16);
+            lbFileName.Name = "lbFileName";
+            lbFileName.Size = new Size(0, 15);
+            lbFileName.TabIndex = 5;
+            // 
             // Form1
             // 
             AllowDrop = true;
@@ -85,6 +94,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(483, 195);
+            Controls.Add(lbFileName);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -107,5 +117,6 @@
         private TextBox textBox2;
         private Label label1;
         private Label label2;
+        private Label lbFileName;
     }
 }
