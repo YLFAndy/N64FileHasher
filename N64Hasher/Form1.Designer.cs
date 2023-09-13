@@ -31,10 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label1 = new Label();
             label2 = new Label();
             lbFileName = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -51,33 +50,17 @@
             // 
             textBox1.Location = new Point(21, 94);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(441, 23);
+            textBox1.Size = new Size(681, 23);
             textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(21, 148);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(23, 127);
-            label1.Name = "label1";
-            label1.Size = new Size(26, 15);
-            label1.TabIndex = 3;
-            label1.Text = "CIC";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(23, 76);
             label2.Name = "label2";
-            label2.Size = new Size(34, 15);
+            label2.Size = new Size(81, 15);
             label2.TabIndex = 4;
-            label2.Text = "Hash";
+            label2.Text = "Lookup Value:";
             // 
             // lbFileName
             // 
@@ -87,17 +70,25 @@
             lbFileName.Size = new Size(0, 15);
             lbFileName.TabIndex = 5;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(91, 44);
+            label1.Name = "label1";
+            label1.Size = new Size(320, 15);
+            label1.TabIndex = 6;
+            label1.Text = "(You may also drop your ROM files directly on this window)";
+            // 
             // Form1
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(483, 195);
+            ClientSize = new Size(729, 195);
+            Controls.Add(label1);
             Controls.Add(lbFileName);
             Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -114,9 +105,8 @@
 
         private Button button1;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label1;
         private Label label2;
         private Label lbFileName;
+        private Label label1;
     }
 }
