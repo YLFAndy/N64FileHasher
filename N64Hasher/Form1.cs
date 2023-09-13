@@ -31,9 +31,8 @@ namespace N64Hasher
         /// TODO: Refactor into reusable components.
         /// </summary>
         /// <param name="fileName"></param>
-        private void computeHash(string fileName)
+        private string computeHash(string fileName)
         {
-            lbFileName.Text = fileName.Split('\\').Last();
             var returnHash = string.Empty;
             uint bootCodeHash;
             var fs = new FileStream(fileName, FileMode.Open);
@@ -174,7 +173,7 @@ namespace N64Hasher
                 }
                 returnHash = returnHash + $" # {gameName}";
             }
-            textBox1.Text = returnHash;
+            return returnHash;
         }
 
         /// <summary>
@@ -283,8 +282,54 @@ namespace N64Hasher
         /// <param name="e"></param>
         private void Form1_DragDrop(object sender, DragEventArgs e)
         {
+            textBox1.Enabled = false;
+            button1.Enabled = false;
+            textBox1.Text = string.Empty;
+            lbFileName.Text = string.Empty;
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            computeHash(files[0]);
+            // Check to see if the item dropped was a folder
+            if (Directory.Exists(files[0]))
+            {
+                textBox1.Text = "Working...";
+                var fileNames = Directory.EnumerateFiles(files[0], "*.*64", SearchOption.AllDirectories);
+                int totalFiles = fileNames.Count();
+                lbFileName.Text = $"Total files found: {totalFiles}";
+                SaveFileDialog sfd = new SaveFileDialog();
+                int counter = 1;
+
+                sfd.ShowDialog();
+                try
+                {
+                    if (File.Exists(sfd.FileName))
+                    {
+                        File.Delete(sfd.FileName);
+                    }
+                    using (StreamWriter sr = new StreamWriter(sfd.FileName))
+                    {
+                        foreach (string file in fileNames)
+                        {
+                            textBox1.Text = $"Working... computing file {counter} out of {totalFiles}.";
+                            textBox1.Update();
+                            sr.WriteLine(computeHash(file));
+                            counter++;
+                        }
+                    }
+                    textBox1.Text = $"Complete! Saved to {sfd.FileName}";
+                }
+                catch(UnauthorizedAccessException)
+                {
+                    MessageBox.Show("You do not have permission to this directory.");
+                    textBox1.Text = $"Error. No permission.";
+                }
+
+            }
+            else
+            {
+                lbFileName.Text = files[0].Split('\\').Last();
+                textBox1.Text = computeHash(files[0]);
+            }
+            textBox1.Enabled = true;
+            button1.Enabled = true;
         }
 
         /// <summary>
