@@ -1,0 +1,17 @@
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\bin\Debug\net6.0-windows\N64DBMergeTool.exe
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\bin\Debug\net6.0-windows\N64DBMergeTool.deps.json
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\bin\Debug\net6.0-windows\N64DBMergeTool.runtimeconfig.json
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\bin\Debug\net6.0-windows\N64DBMergeTool.dll
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\bin\Debug\net6.0-windows\N64DBMergeTool.pdb
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.csproj.AssemblyReference.cache
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.Form1.resources
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.csproj.GenerateResource.cache
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.AssemblyInfoInputs.cache
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.AssemblyInfo.cs
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.csproj.CoreCompileInputs.cache
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.dll
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\refint\N64DBMergeTool.dll
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.pdb
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\N64DBMergeTool.genruntimeconfig.cache
+C:\Users\andyd\source\repos\N64DBMergeTool\N64DBMergeTool\obj\Debug\net6.0-windows\ref\N64DBMergeTool.dll
