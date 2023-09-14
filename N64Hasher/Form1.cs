@@ -91,6 +91,7 @@ namespace N64Hasher
                     }
                 }
                 var gameName = getGameTitle(inputBytes, (char)inputBytes[0x3E]);
+                if (string.IsNullOrEmpty(gameName) || string.IsNullOrEmpty(gameName.Remove('\0'))) gameName = (string)Path.GetFileName(fileName).Split('.')[0];
                 var videoType = getVideoType(inputBytes);
                 var gameCode = getSerialCode(inputBytes);
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
