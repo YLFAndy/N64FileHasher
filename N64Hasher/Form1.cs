@@ -110,31 +110,31 @@ namespace N64Hasher
 
                     case 0x587BD543:
                     case 0x99FC79A5:
-                        cic = "5101";
+                        cic = "cic5101";
                         break;
                     case 0x6170A4A1:
-                        cic = "6101";
+                        cic = "cic6101";
                         break;
                     case 0x90BB6CB5:
-                        cic = "6102";
+                        cic = "cic6102";
                         break;
                     case 0x0B050EE0:
-                        cic = "6103";
+                        cic = "cic6103";
                         break;
                     case 0x98BC2C86:
-                        cic = "6105";
+                        cic = "cic6105";
                         break;
                     case 0xACC8580A:
-                        cic = "6106";
+                        cic = "cic6106";
                         break;
                     case 0x009E9EA3:
-                        cic = "7102";
+                        cic = "cic7102";
                         break;
                     case 0x0E018159:
-                        cic = "8303";
+                        cic = "cic8303";
                         break;
                     default:
-                        cic = "6102";
+                        cic = "cic6102";
                         break;
                 }
                 returnHash = returnHash + $"|{cic}";
